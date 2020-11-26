@@ -32,10 +32,9 @@ public class TestServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse res) 
     throws ServletException, IOException {
-        PrintWriter out;
 
         res.setContentType("text/html; charset=UTF-8");
-        out = res.getWriter();
+        PrintWriter out = res.getWriter();
 
         out.println("<html><body>");
         out.println("<hl>Hello World<hl>");
