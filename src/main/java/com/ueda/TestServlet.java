@@ -30,8 +30,16 @@ public class TestServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        res.getWriter().print("Hello World!");
-    }     
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) 
+    throws ServletException, IOException {
+        PrintWriter out;
 
+        res.setContentType("text/html; charset=UTF-8");
+        out = res.getWriter();
+
+        out.println("<html><body>");
+        out.println("<hl>Hello World<hl>");
+        out.println("<p>Servletのサンプル<p>");
+        out.println("</body></html>");
+    }
 }
