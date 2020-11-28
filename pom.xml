@@ -75,7 +75,7 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
                     <warName>${project.artifactId}</warName>
-                    <webxml>${webxml.path}</webxml>
+                    <webXml>${webxml.path}</webXml>
                 </configuration>
             </plugin>
             <plugin>
