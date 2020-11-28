@@ -39,12 +39,8 @@ public class TestServlet extends HttpServlet {
 
         out.println("<html><body>");
         out.println("<hl>Hello World<hl>");
-        out.println("<p>HTMLへ遷移します<p>");
+        out.println("<p>JSPへ遷移します<p>");
         out.println("</body></html>");
-
-        requestDispatcher dispatcher =  request.getRequestDispatcher("/jsp/index.jsp");
-
-        dispatcher.forward(request, response);
 
     }
 }
