@@ -1,6 +1,6 @@
 <%-- 
     Document   : newjsp
-    Created on : 2020/08/29, 23:29:00
+    Created on : 2020/011/28, 17:42:00
     Author     : syumpei
 --%>
 
@@ -13,16 +13,9 @@
     </head>
     <body>
         <hl>Test is Success</hl>
-        <br>
-        <br>
-            Name : 
-            ${testbeans.name}
             <br>
             <br>
-            Message :
-            ${testbeans.message}
+        <h3>Hello World!</h3>
             <br>
             <br>
-            <a href="/Test/index.html"><font size="3">BACK</font></a>
-    </body>
 </html>
