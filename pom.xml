@@ -72,7 +72,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <failOnMissingWebXml>true</failOnMissingWebXml>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                     <webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
                     <warName>${project.artifactId}</warName>
                     <webXml>${webxml.path}</webXml>
