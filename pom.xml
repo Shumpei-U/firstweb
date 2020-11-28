@@ -41,13 +41,13 @@
 
 
     <build>
-        <plugins>
+     <plugins>
 	   <plugin>
 		<artifactId>maven-compiler-plugin</artifactId>
 		<version>3.1</version>
 		<configuration>
-			<source>1.7</source>
-			<target>1.7</target>
+			<source>1.8</source>
+			<target>1.8</target>
             <encoding>UTF-8</encoding>
 		</configuration>
 	   </plugin>
@@ -72,10 +72,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
+                    <failOnMissingWebXml>true</failOnMissingWebXml>
+                    <webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory> 
+                    <!--target/mvn-webapp-firstwebにwarファイルを作ると指定している -->
                     <warName>${project.artifactId}</warName>
-                    <webXml>${webxml.path}</webXml>
+                    <webXml>src\main\webapp\web.xml</webXml>
                 </configuration>
             </plugin>
             <plugin>
