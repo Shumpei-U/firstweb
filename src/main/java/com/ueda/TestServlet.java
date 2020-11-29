@@ -31,16 +31,25 @@ public class TestServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
 
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) 
     throws ServletException, IOException {
 
+        String name = (String) req.getAttribute("name");
         res.setContentType("text/html; charset=UTF-8");
+        
         PrintWriter out = res.getWriter();
 
         out.println("<html><body>");
-        out.println("<hl>Hello World<hl>");
-        out.println("<p>JSPへ遷移します<p>");
+        out.println("<hl>Welcome<hl>" + name);
+        
+        out.println("<hl>記事を作成しましょう！<hl>");
+        out.println("<input type=\"text\" name=\"article\" />");
         out.println("</body></html>");
-
     }
+    
+     protected void doPost(HttpServletRequest req, HttpServletResponse res) 
+    throws ServletException, IOException {
+     this.doGet(req, res);
+     }
 }

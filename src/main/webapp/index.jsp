@@ -12,10 +12,17 @@
         <title>Test</title>
     </head>
     <body>
-        <hl>Test is Success</hl>
             <br>
             <br>
         <h3>Hello World!</h3>
+        <br>
+        
+        <form method = "GET" action="/mvn-webapp-firstweb/TestServlet">
+        <hl>名前を入力してください</hl>
             <br>
+            <input type="text" name="Name"/>
             <br>
+            <input　type="submit" value="送信"/>
+        </form>
+            
 </html>
